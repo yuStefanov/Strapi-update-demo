@@ -102,6 +102,9 @@
     "author_": {
       "private": true,
       "type": "json"
+    },
+    "Jesus": {
+      "type": "string"
     }
   }
 }

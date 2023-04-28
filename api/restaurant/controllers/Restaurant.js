@@ -63,5 +63,15 @@ module.exports = {
     }
 
     return restaurant;
-  }
+  },
+
+  test: async (ctx) => {
+    let restaurants = (TreatYourselfStaticTexts = await strapi.query('restaurant').find({
+      published_at_null: 'false',
+    }));
+
+    console.log(restaurants[0].Jesus);
+    console.log(restaurants[0].jesus);
+    return restaurants;
+  },
 };

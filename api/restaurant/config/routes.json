@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/restaurants/test",
+      "handler": "Restaurant.test",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/restaurants/:id",
       "handler": "Restaurant.findOne",
       "config": {
